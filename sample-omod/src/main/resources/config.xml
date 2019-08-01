@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//OpenMRS//DTD OpenMRS Config 1.0//EN"
+        "http://resources.openmrs.org/doctype/config-1.2.dtd">
+
+<module configVersion="1.2">
+
+    <properties>
+        <MODULE_ID>bahmnicommons</MODULE_ID>
+        <MODULE_NAME>${project.name}</MODULE_NAME>
+        <MODULE_VERSION>${project.version}</MODULE_VERSION>
+        <MODULE_PACKAGE>${project.groupId}.${MODULE_ID}</MODULE_PACKAGE>
+    </properties>
+    <!-- Module Properties -->
+    <id>sample_module</id>
+    <name>Sample Module</name>
+    <version>0.1-SNAPSHOT</version>
+    <package>org.openmrs.module.sample</package>
+    <author>None</author>
+    <description>
+        A sample openmrs module
+    </description>
+    <activator>org.openmrs.module.sample.Activator</activator>
+
+
+
+    <require_version>${openMRSRuntimeVersion}</require_version>
+    <!-- Required Modules -->
+    <!-- / Required Modules -->
+</module>
