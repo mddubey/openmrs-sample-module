@@ -25,5 +25,8 @@
 
     <require_version>${openMRSRuntimeVersion}</require_version>
     <!-- Required Modules -->
+    <require_modules>
+        <require_module>org.openmrs.module.webservices.rest</require_module>
+    </require_modules>
     <!-- / Required Modules -->
 </module>
