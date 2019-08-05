@@ -29,4 +29,8 @@
         <require_module>org.openmrs.module.webservices.rest</require_module>
     </require_modules>
     <!-- / Required Modules -->
+
+    <mappingFiles>
+        SamplePatient.hbm.xml
+    </mappingFiles>
 </module>
