@@ -10,7 +10,7 @@
                 <param name="sequence">id_seq</param>
             </generator>
         </id>
-        <discriminator column="id" insert="false"/>
+        <discriminator column="patient_id" insert="false"/>
         <property name="name" column="name" type="java.lang.String" not-null="true" length="100"/>
         <property name="gender" column="gender" type="java.lang.Character" not-null="true" length="1"/>
     </class>
