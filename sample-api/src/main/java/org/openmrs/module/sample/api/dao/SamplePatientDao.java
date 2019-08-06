@@ -7,8 +7,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class SamplePatientDao {
-    @Autowired
     private SessionFactory sessionFactory;
+
+    @Autowired
+    public SamplePatientDao(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     public void save(SamplePatient samplePatient) {
         sessionFactory.getCurrentSession().save(samplePatient);

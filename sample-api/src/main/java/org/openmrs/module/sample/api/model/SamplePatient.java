@@ -7,6 +7,15 @@ public class SamplePatient extends BaseOpenmrsObject {
     private String name;
     private Character gender;
 
+    public SamplePatient() {
+    }
+
+    public SamplePatient(Integer id, String name, Character gender) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+    }
+
     public Integer getId() {
         return id;
     }

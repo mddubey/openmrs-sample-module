@@ -8,8 +8,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SamplePatientServiceImpl implements SamplePatientService {
-    @Autowired
     private SamplePatientDao samplePatientDao;
+
+    @Autowired
+    public SamplePatientServiceImpl(SamplePatientDao samplePatientDao) {
+        this.samplePatientDao = samplePatientDao;
+    }
 
     @Override
     public void save(SamplePatient samplePatient) {
