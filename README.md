@@ -5,6 +5,8 @@ A sample omod for openmrs with step wise commits for adding a functionality.
 - Run `mvn clean install`.
 - Find the generated omod file in `sample-omod/target/sample-omod-1.0-SNAPSHOT.omod`. Put this in openmrs modules directory and restart openmrs.
 - By default it will just runs Unit Tests, to include integration tests run `mvn clean install -PIT`. 
+- Running OWASP Dependency Checker `mvn dependency-check:check`
+- Running SpotBugs - static code analyzer for Java `mvn spotbugs:check`
 
 #### Usage
 Once the server is up we can execute below commands from out terminal
